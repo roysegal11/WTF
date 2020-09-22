@@ -1,8 +1,9 @@
 import sys
-from time import sleep
+import time
 
 if __name__ == "__main__":
-    num = int(sys.argv[1])
-    for i in range(num):
-        print (str(i)+" "+str(i*i*i))
-        sleep(1)
+    numb = int(sys.argv[1])+1
+    for i in range(numb):
+        if i != 0:
+            print(str(i)+" "+str(i**2))
+            time.sleep(1)
